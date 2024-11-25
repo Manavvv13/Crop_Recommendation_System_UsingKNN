@@ -15,12 +15,12 @@ st.title("Crop Recommendation System Based on Soil Quality")
 
 # User input for soil parameters using sliders and text input
 ph = st.slider('pH of Soil', min_value=0.0, max_value=14.0, value=6.5, step=0.1)
-N = st.slider('Nitrogen Content (N)', min_value=0.0, max_value=100.0, value=50.0, step=1.0)
-P = st.slider('Phosphorus Content (P)', min_value=0.0, max_value=100.0, value=30.0, step=1.0)
-K = st.slider('Potassium Content (K)', min_value=0.0, max_value=100.0, value=20.0, step=1.0)
+N = st.slider('Nitrogen Content (N)', min_value=0.0, max_value=200.0, value=50.0, step=1.0)
+P = st.slider('Phosphorus Content (P)', min_value=0.0, max_value=200.0, value=30.0, step=1.0)
+K = st.slider('Potassium Content (K)', min_value=0.0, max_value=200.0, value=20.0, step=1.0)
 temperature = st.number_input('Temperature (°C)', min_value=0.0, max_value=50.0, value=28.5, step=0.1)
 humidity = st.slider('Humidity (%)', min_value=0.0, max_value=100.0, value=60.0, step=1.0)
-rainfall = st.slider('Rainfall (mm)', min_value=0.0, max_value=2000.0, value=100.0, step=1.0)
+rainfall = st.slider('Rainfall (mm)', min_value=0.0, max_value=3000.0, value=100.0, step=1.0)
 
 # Button to predict the crop
 if st.button("Predict Crop"):
